@@ -1,0 +1,102 @@
+{
+  "dataset": "transfer",
+  "n": 100,
+  "max_new_tokens": 512,
+  "policies": {
+    "sft": {
+      "exact_accuracy": 0.44,
+      "format_compliance": 0.57,
+      "length_tokens": {
+        "mean": 163.31,
+        "std": 71.19195108999331,
+        "iqr": 79.25,
+        "median": 143.0
+      },
+      "truncation_rate": 0.0,
+      "failure_types": {
+        "format_missing": 43,
+        "correct": 44,
+        "wrong_answer": 13
+      }
+    },
+    "rlvr": {
+      "exact_accuracy": 0.47,
+      "format_compliance": 0.59,
+      "length_tokens": {
+        "mean": 163.54,
+        "std": 71.12516010526795,
+        "iqr": 78.25,
+        "median": 140.0
+      },
+      "truncation_rate": 0.0,
+      "failure_types": {
+        "format_missing": 41,
+        "correct": 47,
+        "wrong_answer": 12
+      }
+    },
+    "rlaif": {
+      "exact_accuracy": 0.44,
+      "format_compliance": 0.58,
+      "length_tokens": {
+        "mean": 164.39,
+        "std": 72.46639152048348,
+        "iqr": 78.25,
+        "median": 143.0
+      },
+      "truncation_rate": 0.0,
+      "failure_types": {
+        "format_missing": 42,
+        "correct": 44,
+        "wrong_answer": 14
+      }
+    }
+  },
+  "pairwise": {
+    "rlaif_vs_sft": {
+      "n": 100,
+      "win_rate_a": 0.515,
+      "wins": 12,
+      "ties": 79,
+      "losses": 9,
+      "tie_rate": 0.79,
+      "verifier_distinguishes_n": 2,
+      "judge_agrees_with_verifier": 0.5,
+      "judge_disagrees_with_verifier": 0.0,
+      "judge_tie_when_verifier_distinguishes": 0.5,
+      "verifier_tied_n": 98,
+      "judge_decisive_when_verifier_tied": 0.20408163265306123,
+      "judge_prefers_longer_among_decisive": 0.5
+    },
+    "rlvr_vs_sft": {
+      "n": 100,
+      "win_rate_a": 0.525,
+      "wins": 13,
+      "ties": 79,
+      "losses": 8,
+      "tie_rate": 0.79,
+      "verifier_distinguishes_n": 3,
+      "judge_agrees_with_verifier": 0.6666666666666666,
+      "judge_disagrees_with_verifier": 0.0,
+      "judge_tie_when_verifier_distinguishes": 0.3333333333333333,
+      "verifier_tied_n": 97,
+      "judge_decisive_when_verifier_tied": 0.1958762886597938,
+      "judge_prefers_longer_among_decisive": 0.47619047619047616
+    },
+    "rlaif_vs_rlvr": {
+      "n": 100,
+      "win_rate_a": 0.525,
+      "wins": 12,
+      "ties": 81,
+      "losses": 7,
+      "tie_rate": 0.81,
+      "verifier_distinguishes_n": 3,
+      "judge_agrees_with_verifier": 0.0,
+      "judge_disagrees_with_verifier": 0.3333333333333333,
+      "judge_tie_when_verifier_distinguishes": 0.6666666666666666,
+      "verifier_tied_n": 97,
+      "judge_decisive_when_verifier_tied": 0.18556701030927836,
+      "judge_prefers_longer_among_decisive": 0.5263157894736842
+    }
+  }
+}

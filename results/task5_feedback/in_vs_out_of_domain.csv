@@ -1,0 +1,4 @@
+policy,gsm_acc,svamp_acc,acc_drop_abs,acc_drop_rel,gsm_format,svamp_format,gsm_len,svamp_len,svamp_len_over_gsm_len,gsm_failures,svamp_failures
+sft,0.28,0.44,-0.15999999999999998,-0.5714285714285713,0.3566666666666667,0.57,273.7266666666667,163.31,0.5966170632504444,"{'format_missing': 187, 'correct': 84, 'wrong_answer': 23, 'truncated_no_final': 6}","{'format_missing': 43, 'correct': 44, 'wrong_answer': 13}"
+rlvr,0.2833333333333333,0.47,-0.18666666666666665,-0.6588235294117647,0.36666666666666664,0.59,275.3433333333333,163.54,0.5939493722988269,"{'format_missing': 184, 'correct': 85, 'wrong_answer': 25, 'truncated_no_final': 6}","{'format_missing': 41, 'correct': 47, 'wrong_answer': 12}"
+rlaif,0.27,0.44,-0.16999999999999998,-0.6296296296296295,0.3466666666666667,0.58,275.50666666666666,164.39,0.5966824759231476,"{'format_missing': 189, 'correct': 81, 'wrong_answer': 23, 'truncated_no_final': 7}","{'format_missing': 42, 'correct': 44, 'wrong_answer': 14}"

@@ -1,0 +1,199 @@
+{
+  "in_vs_out_of_domain": [
+    {
+      "policy": "sft",
+      "gsm_acc": 0.28,
+      "svamp_acc": 0.44,
+      "acc_drop_abs": -0.15999999999999998,
+      "acc_drop_rel": -0.5714285714285713,
+      "gsm_format": 0.3566666666666667,
+      "svamp_format": 0.57,
+      "gsm_len": 273.7266666666667,
+      "svamp_len": 163.31,
+      "svamp_len_over_gsm_len": 0.5966170632504444,
+      "gsm_failures": {
+        "format_missing": 187,
+        "correct": 84,
+        "wrong_answer": 23,
+        "truncated_no_final": 6
+      },
+      "svamp_failures": {
+        "format_missing": 43,
+        "correct": 44,
+        "wrong_answer": 13
+      }
+    },
+    {
+      "policy": "rlvr",
+      "gsm_acc": 0.2833333333333333,
+      "svamp_acc": 0.47,
+      "acc_drop_abs": -0.18666666666666665,
+      "acc_drop_rel": -0.6588235294117647,
+      "gsm_format": 0.36666666666666664,
+      "svamp_format": 0.59,
+      "gsm_len": 275.3433333333333,
+      "svamp_len": 163.54,
+      "svamp_len_over_gsm_len": 0.5939493722988269,
+      "gsm_failures": {
+        "format_missing": 184,
+        "correct": 85,
+        "wrong_answer": 25,
+        "truncated_no_final": 6
+      },
+      "svamp_failures": {
+        "format_missing": 41,
+        "correct": 47,
+        "wrong_answer": 12
+      }
+    },
+    {
+      "policy": "rlaif",
+      "gsm_acc": 0.27,
+      "svamp_acc": 0.44,
+      "acc_drop_abs": -0.16999999999999998,
+      "acc_drop_rel": -0.6296296296296295,
+      "gsm_format": 0.3466666666666667,
+      "svamp_format": 0.58,
+      "gsm_len": 275.50666666666666,
+      "svamp_len": 164.39,
+      "svamp_len_over_gsm_len": 0.5966824759231476,
+      "gsm_failures": {
+        "format_missing": 189,
+        "correct": 81,
+        "wrong_answer": 23,
+        "truncated_no_final": 7
+      },
+      "svamp_failures": {
+        "format_missing": 42,
+        "correct": 44,
+        "wrong_answer": 14
+      }
+    }
+  ],
+  "pairwise": [
+    {
+      "dataset": "gsm",
+      "pair": "rlaif_vs_sft",
+      "n": 300,
+      "win_rate_a": 0.49833333333333335,
+      "wins": 4,
+      "ties": 291,
+      "losses": 5,
+      "tie_rate": 0.97,
+      "verifier_distinguishes_n": 7,
+      "judge_agrees_with_verifier": 0.0,
+      "judge_disagrees_with_verifier": 0.0,
+      "judge_tie_when_verifier_distinguishes": 1.0,
+      "verifier_tied_n": 293,
+      "judge_decisive_when_verifier_tied": 0.030716723549488054,
+      "judge_prefers_longer_among_decisive": 0.4444444444444444
+    },
+    {
+      "dataset": "gsm",
+      "pair": "rlvr_vs_sft",
+      "n": 300,
+      "win_rate_a": 0.505,
+      "wins": 8,
+      "ties": 287,
+      "losses": 5,
+      "tie_rate": 0.9566666666666667,
+      "verifier_distinguishes_n": 11,
+      "judge_agrees_with_verifier": 0.18181818181818182,
+      "judge_disagrees_with_verifier": 0.18181818181818182,
+      "judge_tie_when_verifier_distinguishes": 0.6363636363636364,
+      "verifier_tied_n": 289,
+      "judge_decisive_when_verifier_tied": 0.031141868512110725,
+      "judge_prefers_longer_among_decisive": 0.4230769230769231
+    },
+    {
+      "dataset": "gsm",
+      "pair": "rlaif_vs_rlvr",
+      "n": 300,
+      "win_rate_a": 0.4866666666666667,
+      "wins": 4,
+      "ties": 284,
+      "losses": 12,
+      "tie_rate": 0.9466666666666667,
+      "verifier_distinguishes_n": 12,
+      "judge_agrees_with_verifier": 0.3333333333333333,
+      "judge_disagrees_with_verifier": 0.0,
+      "judge_tie_when_verifier_distinguishes": 0.6666666666666666,
+      "verifier_tied_n": 288,
+      "judge_decisive_when_verifier_tied": 0.041666666666666664,
+      "judge_prefers_longer_among_decisive": 0.5
+    },
+    {
+      "dataset": "svamp",
+      "pair": "rlaif_vs_sft",
+      "n": 100,
+      "win_rate_a": 0.515,
+      "wins": 12,
+      "ties": 79,
+      "losses": 9,
+      "tie_rate": 0.79,
+      "verifier_distinguishes_n": 2,
+      "judge_agrees_with_verifier": 0.5,
+      "judge_disagrees_with_verifier": 0.0,
+      "judge_tie_when_verifier_distinguishes": 0.5,
+      "verifier_tied_n": 98,
+      "judge_decisive_when_verifier_tied": 0.20408163265306123,
+      "judge_prefers_longer_among_decisive": 0.5
+    },
+    {
+      "dataset": "svamp",
+      "pair": "rlvr_vs_sft",
+      "n": 100,
+      "win_rate_a": 0.525,
+      "wins": 13,
+      "ties": 79,
+      "losses": 8,
+      "tie_rate": 0.79,
+      "verifier_distinguishes_n": 3,
+      "judge_agrees_with_verifier": 0.6666666666666666,
+      "judge_disagrees_with_verifier": 0.0,
+      "judge_tie_when_verifier_distinguishes": 0.3333333333333333,
+      "verifier_tied_n": 97,
+      "judge_decisive_when_verifier_tied": 0.1958762886597938,
+      "judge_prefers_longer_among_decisive": 0.47619047619047616
+    },
+    {
+      "dataset": "svamp",
+      "pair": "rlaif_vs_rlvr",
+      "n": 100,
+      "win_rate_a": 0.525,
+      "wins": 12,
+      "ties": 81,
+      "losses": 7,
+      "tie_rate": 0.81,
+      "verifier_distinguishes_n": 3,
+      "judge_agrees_with_verifier": 0.0,
+      "judge_disagrees_with_verifier": 0.3333333333333333,
+      "judge_tie_when_verifier_distinguishes": 0.6666666666666666,
+      "verifier_tied_n": 97,
+      "judge_decisive_when_verifier_tied": 0.18556701030927836,
+      "judge_prefers_longer_among_decisive": 0.5263157894736842
+    }
+  ],
+  "diagnostics": {
+    "S_reason_verifier": {
+      "better": 0.0,
+      "tie": 1.0,
+      "wrong": 0.0
+    },
+    "S_reason_judge": {
+      "better": 0.0,
+      "tie": 1.0,
+      "wrong": 0.0
+    },
+    "S_outcome_verifier": {
+      "better": 1.0,
+      "tie": 0.0,
+      "wrong": 0.0
+    },
+    "S_outcome_judge": {
+      "better": 0.1375,
+      "tie": 0.8625,
+      "wrong": 0.0
+    }
+  }
+}

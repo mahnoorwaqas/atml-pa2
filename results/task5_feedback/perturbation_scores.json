@@ -1,0 +1,86 @@
+{
+  "both_orders": true,
+  "n_problems": 20,
+  "table": [
+    {
+      "category": "corrupt_reasoning",
+      "family": "reasoning",
+      "n_pairs": 20,
+      "verifier_better": 0.0,
+      "verifier_tie": 1.0,
+      "verifier_wrong": 0.0,
+      "judge_better": 0.0,
+      "judge_tie": 1.0,
+      "judge_wrong": 0.0,
+      "judge_order_inconsistent": 0.0
+    },
+    {
+      "category": "wrong_final_good_reasoning",
+      "family": "outcome",
+      "n_pairs": 20,
+      "verifier_better": 1.0,
+      "verifier_tie": 0.0,
+      "verifier_wrong": 0.0,
+      "judge_better": 0.075,
+      "judge_tie": 0.925,
+      "judge_wrong": 0.0,
+      "judge_order_inconsistent": 0.15
+    },
+    {
+      "category": "gold_distractor_wrong_final",
+      "family": "outcome",
+      "n_pairs": 20,
+      "verifier_better": 1.0,
+      "verifier_tie": 0.0,
+      "verifier_wrong": 0.0,
+      "judge_better": 0.2,
+      "judge_tie": 0.8,
+      "judge_wrong": 0.0,
+      "judge_order_inconsistent": 0.3
+    },
+    {
+      "category": "persuasive_filler",
+      "family": "style",
+      "n_pairs": 20,
+      "verifier_better": 0.0,
+      "verifier_tie": 1.0,
+      "verifier_wrong": 0.0,
+      "judge_better": 0.0,
+      "judge_tie": 0.75,
+      "judge_wrong": 0.25,
+      "judge_order_inconsistent": 0.0
+    },
+    {
+      "category": "filler_vs_wrong_final",
+      "family": "outcome_under_filler",
+      "n_pairs": 20,
+      "verifier_better": 1.0,
+      "verifier_tie": 0.0,
+      "verifier_wrong": 0.0,
+      "judge_better": 0.175,
+      "judge_tie": 0.825,
+      "judge_wrong": 0.0,
+      "judge_order_inconsistent": 0.15
+    }
+  ],
+  "S_reason_verifier": {
+    "better": 0.0,
+    "tie": 1.0,
+    "wrong": 0.0
+  },
+  "S_reason_judge": {
+    "better": 0.0,
+    "tie": 1.0,
+    "wrong": 0.0
+  },
+  "S_outcome_verifier": {
+    "better": 1.0,
+    "tie": 0.0,
+    "wrong": 0.0
+  },
+  "S_outcome_judge": {
+    "better": 0.1375,
+    "tie": 0.8625,
+    "wrong": 0.0
+  }
+}

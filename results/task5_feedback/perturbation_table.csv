@@ -1,0 +1,6 @@
+category,family,n_pairs,verifier_better,verifier_tie,verifier_wrong,judge_better,judge_tie,judge_wrong,judge_order_inconsistent
+corrupt_reasoning,reasoning,20,0.0,1.0,0.0,0.0,1.0,0.0,0.0
+wrong_final_good_reasoning,outcome,20,1.0,0.0,0.0,0.075,0.925,0.0,0.15
+gold_distractor_wrong_final,outcome,20,1.0,0.0,0.0,0.2,0.8,0.0,0.3
+persuasive_filler,style,20,0.0,1.0,0.0,0.0,0.75,0.25,0.0
+filler_vs_wrong_final,outcome_under_filler,20,1.0,0.0,0.0,0.175,0.825,0.0,0.15
