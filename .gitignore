@@ -31,3 +31,4 @@ data/*
 # keep small result files; ignore large generations if needed
 *.pt
 *.pth
+results/*.numbers
